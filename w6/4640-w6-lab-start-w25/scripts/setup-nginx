@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# setup nginx configuration files
+sudo cp /tmp/web/nginx.conf /etc/nginx/sites-available/
+sudo unlink /etc/nginx/sites-enabled/*
+sudo ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
