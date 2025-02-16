@@ -16,7 +16,7 @@ source "amazon-ebs" "ubuntu" {
   source_ami_filter {
     filters = {
       # Using a wildcard filter for Ubuntu 24.04 AMIs
-      name                = "ubuntu/images/hvm-ssd/ubuntu-24.04-amd64-server-*"
+      name                = "ubuntu/images/hvm-ssd/ubuntu-24.04-*"
       root-device-type    = "ebs"
       virtualization-type = "hvm"
     }
